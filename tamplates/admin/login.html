@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Store-Login</title>
+    <link rel="stylesheet" href="/css/login2.css">
+</head>
+<body>
+    <!--Login Form -->
+  <div class="bodyContainer">
+    <header>
+        <div class="logo">
+            <img src="\images\furniture-logo.jpg" alt="">
+        </div>
+      </header>
+    <div class="form_container">
+      <form action="" id="form">
+        <div class="input-control">
+          <label for="emailId">Email</label>
+          <input id="emailId" name="emailId" type="email">
+          <div class=" user fa-solid fa-envelope"></div>
+          <p style="color: red;font-weight: bold;" id="emailInputError"></p>
+        </div>
+        <div class="input-control">
+          <label for="passId">Password</label>
+          <input id="passId" name="passId" type="password">
+          <div class=" pwd fa-solid fa-lock"></div>
+          <p style="color: red;font-weight: bold;" id="passInputErr"></p>
+        </div>
+        <div class="forgotPwd"><a href="#">Forgot Pasword?</a></div>
+        <input type="submit" value="LogIn" id="loginBtn">
+        <p class="errorElement" id="errorElement"></p>
+        <p class="successElement" id="successElement"></p>
+        <h5 class="footer-reg">Create New Account?<a href="./registration.html">Register</a></h5>
+      </form>
+    </div>
+  </div>
+  <!-- Scripts -->
+  <script src="\js\jwt_decode.js"></script>
+  <script src="\js\cdn\jQuery.js"></script>
+  <script src="\js\login.js"></script>
+  <script src="\js\common.js"></script>
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/df18090576.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+</body>
+</html>

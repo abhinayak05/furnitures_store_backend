@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+
+}
+
+.bodyContainer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.form_container{
+    background-color: white;
+    width:380px;
+    padding:3px 26px 5px 34px;
+    border-radius: 5px;
+    box-shadow:0px 3px 4px -2px grey;
+}
+.form_container header{
+    font-weight: bold;
+    font-size: 40px;
+}
+.logo{
+    width: 100%;
+}
+.logo img{
+    width: 300px;
+}
+
+form .field{
+    width:100%;
+    margin-bottom:30px;
+}
+form .field.shake{
+    animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+    0%,100%{
+        margin-left: 0;
+    }
+    20%,80%{
+        margin-left: -10px;
+    }
+    40%,60%{
+        margin-left: 10px
+    }
+}
+
+.form_container form{
+    margin:40px 0;
+
+}
+
+form input {
+    height: 35px;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    border-radius:5px;
+    border-bottom-width: 2px;
+}
+
+form .field.error input{
+    border:2px solid #dc3545;
+}
+form input::placeholder{
+    color:#bfbfbf;
+    font-size:17px;
+}
+.input-control{
+    position:relative;
+}
+.input-control i{
+    position: absolute;
+    right: 5px; 
+    top: 47px;
+}
+.input-control .user,.pwd{
+    position: absolute;
+    left: -24px; 
+    top: 41px;
+    color:rgb(170, 170, 170);
+}
+
+.forgotPwd{
+    text-align:left;
+    margin-top:0px;
+
+}
+.footer-reg{
+    text-align:center;
+    margin-top: 20px;
+}
+
+form input[type='submit']{
+    cursor: pointer;
+    margin-top:30px;
+    background:rgb(0, 89, 192);
+    color:white;
+    font-weight:bold;
+    border:none;
+    transition: background 0.2s ease;
+}
+form input[type='submit']:hover{
+    background:#546bc6;
+}
+
+.errorElement{
+    font-size:15px;
+    color: red;
+    margin-top: 10px;
+    background-color: rgb(255 255 255);
+    box-shadow: 0px 0px 5px 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.successElement{
+    font-size:15px;
+    color: rgb(81, 198, 48);
+    background-color: rgb(255 255 255);
+    box-shadow: 0px 0px 5px 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+.input-control{
+    position: relative;
+}
+
+.input-control i {
+    position: absolute;
+    right:5px;
+    top:47px;
+    visibility: hidden;
+}
+
+.input-control.success i.fa-circle-check{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.input-control.error i.fa-circle-exclamation{
+    color: #e74c3c;
+    visibility:visible;
+} */
