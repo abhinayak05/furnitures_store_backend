@@ -15,7 +15,7 @@ module.exports = function(props){
 async function getCartProducts(payload){
     let sqlStmt=`SELECT product_cart.*,product_image.image_url,product_cart.quantity as cart_quantity,product_cart.product_id,
     product.product_name,product.product_price,product.category_id from product_cart INNER JOIN product ON product_cart.product_id=product.id
-     LEFT JOIN product_image ON product_image.product_id=product.id WHERE"${payload.userId}"`;
+     LEFT JOIN product_image ON product_image.product_id=product.id WHERE user_id="${payload.userId}"`;
 
     try{
         console.log(sqlStmt);
