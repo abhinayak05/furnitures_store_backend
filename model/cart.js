@@ -49,14 +49,14 @@ async function saveCartProducts(req,res){
 
 async function increaseCartProduct(req,res){
     let payload=req.body;
-    payload={userId:req.user.id,...payload}
+    // payload={userId:req.user.id,...payload}
     let options=await backend.increaseCartProduct(payload);
     return res.send(options)
 }
 
 async function decreaseCartProduct(req,res){
     let payload=req.body;
-    payload={userId:req.user.id,...payload};
+    // payload={userId:req.user.id,...payload};
     let options= await backend.decreaseCartProduct(payload)
     return res.send(options)
 }

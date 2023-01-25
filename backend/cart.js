@@ -49,7 +49,7 @@ async function saveCartProducts(payload){
 }
 
 async function increaseCartProduct(payload){
-    let sqlStmt=`UPDATE product_cart SET quantity=${payload.quantity}+0,updated_at=now() WHERE user_id="${payload.userId}" AND product_id="${payload.productId}"`;
+    let sqlStmt=`UPDATE product_cart SET quantity=${payload.quantity}+1,updated_at=now() WHERE user_id="${payload.userId}" AND product_id="${payload.productId}"`;
     try{
         console.log(sqlStmt);
         let result=await db.query(sqlStmt);
